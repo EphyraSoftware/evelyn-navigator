@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <link rel="shortcut icon" type="image/ico" href="/images/favicon.ico"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+
+      <% links.forEach(link => { %>
+      <div class="row">
+        <div class="col-3">
+          <img class="nav-icon" src="<%= link.img %>" alt="system logo" />
+        </div>
+        <div class="col-sm-9">
+          <a href="<%= link.href %>" ><%= link.text %></a>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </body>
+</html>
