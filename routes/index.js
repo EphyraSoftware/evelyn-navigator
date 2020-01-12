@@ -35,6 +35,11 @@ router.get('/', function(req, res, next) {
       text: 'RabbitMQ management console',
       href: 'http://rabbit.evelyn.internal:32233',
       img: '/images/rabbitmq_logo_strap.webp'
+    }, {
+      // Thanks to https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/115px-Prometheus_software_logo.svg.png
+      text: 'Prometheus server',
+      href: 'http://prometheus.evelyn.internal:30235',
+      img: '/images/115px-Prometheus_software_logo.svg.png'
     }]
   });
 });
