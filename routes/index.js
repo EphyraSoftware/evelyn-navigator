@@ -40,6 +40,11 @@ router.get('/', function(req, res, next) {
       text: 'Prometheus server',
       href: 'http://prometheus.evelyn.internal:30235',
       img: '/images/115px-Prometheus_software_logo.svg.png'
+    }, {
+      // Thanks to https://upload.wikimedia.org/wikipedia/commons/9/9d/Grafana_logo.png
+      text: 'Grafana dashboard',
+      href: 'http://grafana.evelyn.internal:30236',
+      img: '/images/Grafana_logo.png'
     }]
   });
 });
